@@ -2,7 +2,7 @@ pipeline {
   agent {
     docker {
       image 'tomcat'
-      args 'replicas = 6'
+      args '-p 8085:8085'
     }
 
   }
